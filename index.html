@@ -32,6 +32,15 @@
   <meta name="twitter:description" content="The fastest way to split a restaurant bill with friends. Free, works in any browser.">
   <meta name="twitter:image" content="https://nibill.netlify.app/og-image.jpg">
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MJBEBVEFXL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MJBEBVEFXL');
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <style>
@@ -342,6 +351,7 @@
     </div>
     <button class="dl-btn" onclick="downloadPng()">📷 Save as image</button>
     <button class="reset-btn" onclick="resetAll()">🔄 Start a new bill</button>
+    <a href="https://ko-fi.com/nibill" target="_blank" rel="noopener" class="kofi-btn" style="display:block;margin-top:10px;text-align:center;font-family:'DM Sans',sans-serif;font-size:0.8rem;color:var(--ink-light);opacity:0.65;text-decoration:none;padding:8px;border-radius:var(--radius-sm);border:1px solid var(--border);transition:opacity 0.15s" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.65'">☕ Buy us a round</a>
   </div>
 </div>
 
@@ -995,10 +1005,25 @@
     const tb  = document.getElementById('toggle-btn');
     const dlb = document.querySelector('.dl-btn');
     const rb  = document.querySelector('.reset-btn');
+    const kofi = document.querySelector('.kofi-btn');
     tb.style.display='none'; dlb.style.display='none'; rb.style.display='none';
+    if (kofi) kofi.style.display='none';
 
     html2canvas(document.getElementById('summary-capture'),{ backgroundColor:'#faf7f2', scale:2, useCORS:true })
       .then(canvas=>{
+        // Draw "Made with Nibill" watermark
+        const ctx = canvas.getContext('2d');
+        const text = 'Made with Nibill';
+        const fontSize = Math.max(20, Math.round(canvas.width * 0.028));
+        ctx.save();
+        ctx.font = `500 ${fontSize}px 'DM Sans', sans-serif`;
+        ctx.fillStyle = 'rgba(74, 63, 46, 0.45)';
+        ctx.textAlign = 'right';
+        ctx.textBaseline = 'bottom';
+        const padding = fontSize * 1.2;
+        ctx.fillText(text, canvas.width - padding, canvas.height - padding);
+        ctx.restore();
+
         const a    = document.createElement('a');
         const date = document.getElementById('meta-date').value.trim().replace(/[\s/,]/g,'-') || '';
         const loc  = document.getElementById('meta-location').value.trim().replace(/[\s,]/g,'-') || '';
@@ -1009,6 +1034,7 @@
       })
       .finally(()=>{
         tb.style.display=''; dlb.style.display=''; rb.style.display='';
+        if (kofi) kofi.style.display='';
       });
   }
 
