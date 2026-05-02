@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ── SEO ─────────────────────────────────────────────── -->
+  <title>How to Split a Restaurant Bill Fairly | Nibill Blog</title>
+  <meta name="description" content="Stop the awkward moment when the bill arrives. Learn the fairest ways to split a restaurant bill, handle tips, and use the right tools so everyone pays their share.">
+  <meta name="author" content="Nibill">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://nibill.app/blog.html">
+
+  <!-- ── Open Graph (WhatsApp, Facebook, iMessage previews) ── -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How to Split a Restaurant Bill Fairly (Without the Awkwardness)">
+  <meta property="og:description" content="Stop the awkward moment when the bill arrives. Learn the fairest ways to split a restaurant bill, handle tips, and use the right tools.">
+  <meta property="og:url" content="https://nibill.app/blog.html">
+  <meta property="og:site_name" content="Nibill">
+  <meta property="og:image" content="https://nibill.app/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="article:published_time" content="2025-01-01T00:00:00Z">
+  <meta property="article:author" content="Nibill">
+
+  <!-- ── Twitter Card ──────────────────────────────────────── -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Split a Restaurant Bill Fairly | Nibill Blog">
+  <meta name="twitter:description" content="Stop the awkward moment when the bill arrives. Learn the fairest ways to split a restaurant bill and handle tips.">
+  <meta name="twitter:image" content="https://nibill.app/og-image.jpg">
+
+  <!-- ── Article Schema ────────────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Split a Restaurant Bill Fairly (Without the Awkwardness)",
+    "description": "Stop the awkward moment when the bill arrives. Learn the fairest ways to split a restaurant bill, handle tips, and use the right tools so everyone pays their share.",
+    "author": {
+      "@type": "Organization",
+      "name": "Nibill",
+      "url": "https://nibill.app"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Nibill",
+      "url": "https://nibill.app"
+    },
+    "datePublished": "2025-01-01",
+    "url": "https://nibill.app/blog.html",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://nibill.app/blog.html"
+    }
+  }
+  </script>
+
+  <!-- ── Favicon ───────────────────────────────────────────── -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- ── Fonts (matching app) ──────────────────────────────── -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --cream:      #faf7f2;
+      --warm-white: #fff9f3;
+      --ink:        #1a1208;
+      --ink-light:  #4a3f2e;
+      --amber:      #d4820a;
+      --amber-light:#f5a623;
+      --amber-pale: #fef3dc;
+      --border:     #e8ddd0;
+      --shadow:     0 2px 12px rgba(26,18,8,0.08);
+      --radius:     14px;
+      --radius-sm:  8px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--ink);
+      color: var(--cream);
+      padding: 16px 24px 14px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 20px rgba(26,18,8,0.3);
+    }
+    .header-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo-wrap {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+    }
+    .logo-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      letter-spacing: -0.02em;
+      color: var(--cream);
+      text-decoration: none;
+    }
+    .logo-tagline {
+      font-size: 0.6rem;
+      opacity: 0.45;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+    .back-link {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--amber-light);
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      opacity: 0.9;
+      transition: opacity 0.15s;
+    }
+    .back-link:hover { opacity: 1; }
+
+    /* ── ARTICLE CONTAINER ── */
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── ARTICLE HEADER ── */
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .badge {
+      background: var(--amber-pale);
+      border: 1.5px solid #f0c870;
+      color: var(--amber);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 100px;
+    }
+    .read-time {
+      font-size: 0.75rem;
+      color: var(--ink-light);
+      opacity: 0.65;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.9rem, 5vw, 2.9rem);
+      line-height: 1.15;
+      color: var(--ink);
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      font-size: 1.08rem;
+      color: var(--ink-light);
+      border-left: 3px solid var(--amber);
+      padding-left: 16px;
+      margin-bottom: 36px;
+      line-height: 1.7;
+    }
+
+    /* ── DIVIDER ── */
+    .divider {
+      border: none;
+      border-top: 1.5px solid var(--border);
+      margin: 36px 0;
+    }
+
+    /* ── SECTION HEADINGS ── */
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.45rem;
+      color: var(--ink);
+      margin-bottom: 14px;
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 .num {
+      background: var(--ink);
+      color: var(--cream);
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: var(--ink-light);
+      font-size: 0.97rem;
+    }
+    strong { color: var(--ink); }
+    em { color: var(--ink); font-style: italic; }
+
+    /* ── CALLOUT BOX ── */
+    .callout {
+      background: var(--amber-pale);
+      border: 1.5px solid #f0c870;
+      border-radius: var(--radius-sm);
+      padding: 16px 18px;
+      margin: 20px 0;
+      font-size: 0.9rem;
+      color: var(--ink);
+    }
+    .callout strong { color: var(--amber); }
+
+    /* ── LIST ── */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 12px 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    ul li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 0.95rem;
+      color: var(--ink-light);
+    }
+    ul li::before {
+      content: '→';
+      color: var(--amber);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ── CTA BOX ── */
+    .cta-box {
+      background: var(--ink);
+      color: var(--cream);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      text-align: center;
+      margin-top: 48px;
+    }
+    .cta-box h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .cta-box p {
+      color: rgba(250,247,242,0.7);
+      margin-bottom: 20px;
+      font-size: 0.92rem;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: var(--amber);
+      color: white;
+      padding: 13px 28px;
+      text-decoration: none;
+      border-radius: var(--radius-sm);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: background 0.15s, transform 0.15s;
+    }
+    .cta-btn:hover {
+      background: #b86e08;
+      transform: translateY(-1px);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 32px 24px 24px;
+      font-size: 0.78rem;
+      color: var(--ink-light);
+      opacity: 0.5;
+      border-top: 1.5px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 32px 16px 60px; }
+      h1 { font-size: 1.75rem; }
+      h2 { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo-wrap">
+      <a href="https://nibill.app" class="logo-name">Nibill</a>
+      <span class="logo-tagline">Split smart. Eat happy.</span>
+    </div>
+    <a href="https://nibill.app" class="back-link">← Back to App</a>
+  </div>
+</header>
+
+<div class="container">
+  <article>
+
+    <div class="article-meta">
+      <span class="badge">Tips &amp; Advice</span>
+      <span class="read-time">4 min read</span>
+    </div>
+
+    <h1>The Art of the Shared Table: How to Split a Restaurant Bill Fairly (Without the Awkwardness)</h1>
+
+    <p class="intro">We've all been there. The meal was fantastic, the conversation was flowing — and then the bill arrives. Suddenly, the vibe shifts. One person is trying to remember if they had two or three beers, another is squinting at the service charge, and the friend who only ordered a side salad is looking increasingly nervous.</p>
+
+    <p>Splitting a bill shouldn't be the hardest part of your night out. Whether you're a group of students on a tight budget or friends celebrating a birthday, getting the maths right is essential for maintaining both your bank balance and your friendships.</p>
+
+    <hr class="divider">
+
+    <h2><span class="num">1</span> The "Even Split" Trap</h2>
+
+    <p>For affluent diners, "just splitting it evenly" is the path of least resistance. But if you're eating on a budget, an even split can be a disaster. If you ordered the pasta and tap water while your friend had the 12oz ribeye and three cocktails, an even split isn't just "easier" — it's unfair.</p>
+
+    <div class="callout">
+      <strong>The Golden Rule:</strong> Always decide <em>before</em> you order whether the table is going to split evenly. If anyone looks hesitant, default to itemising.
+    </div>
+
+    <h2><span class="num">2</span> Handling the "Add-Ons" — Tips and Service Charges</h2>
+
+    <p>In many countries, service charges and tips are added at the end. This is where manual calculations usually fall apart. To be truly fair, any percentage-based additions should be applied to each person's individual total — not the group total split equally.</p>
+
+    <p>This is why using a dedicated <strong>restaurant bill calculator</strong> is far more accurate than your phone's basic calculator app. The maths compounds fast.</p>
+
+    <h2><span class="num">3</span> The Hybrid Strategy: The Best of Both Worlds</h2>
+
+    <p>The most efficient way to split fairly is the "Hybrid Method":</p>
+
+    <ul>
+      <li><strong>Identify the big spenders:</strong> Manually allocate the expensive items — that steak, the bottle of wine, the sharing platter someone barely touched.</li>
+      <li><strong>Divide the rest equally:</strong> Take the remaining balance and split it among the group. It's fast, it's fair, and no one has to justify ordering a dessert.</li>
+    </ul>
+
+    <p>This is exactly how Nibill works — add each item, assign it to whoever shared it, and let the app handle the maths.</p>
+
+    <h2><span class="num">4</span> Technology to the Rescue</h2>
+
+    <p>The "back of the napkin" era is over. Today, tools like <strong>Nibill</strong> let you handle complex splits in seconds — no download, no sign-up, just open a browser and go. Add items, assign them to people, pick a tip percentage, and you're done.</p>
+
+    <p>It even handles partial shares, like splitting a starter three ways or giving someone a custom discount. Things that used to take five minutes of phone-passing now take thirty seconds.</p>
+
+    <h2><span class="num">5</span> No More "Who Owes What?"</h2>
+
+    <p>If you're the one who covered the bill, don't rely on your memory — or a group chat full of "I'll get you back!" messages. With Nibill, you can <strong>save the summary as an image</strong> and drop it straight into the group chat. It clearly shows exactly what each person owes, itemised and totalled, with no room for argument.</p>
+
+    <div class="cta-box">
+      <h3>Stop the bill-splitting headache</h3>
+      <p>Try Nibill now — no download, no fuss, just fair splits for every currency.</p>
+      <a href="https://nibill.app" class="cta-btn">Try Nibill for Free →</a>
+    </div>
+
+  </article>
+</div>
+
+<footer>
+  <p>&copy; 2025 Nibill &mdash; The smartest way to split the bill.</p>
+</footer>
+
+</body>
+</html>
