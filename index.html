@@ -3,34 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
-<title>Nibill</title>
+<title>Nibill — Free Restaurant Bill Splitter &amp; Tip Calculator</title>
+
   <!-- SEO -->
-  <meta name="description" content="Nibill — the fastest way to split a restaurant bill with friends. Add items, assign to people, handle tips and unequal splits. Free, no app needed.">
-  <meta name="keywords" content="bill splitter, split bill, restaurant bill, divide bill, split the bill, bill calculator, dining out, group dining, tip calculator">
+  <meta name="description" content="Split a restaurant bill fairly in seconds. Add items, assign them to people, calculate tips, and share the summary. Free, no app or sign-up needed.">
   <meta name="author" content="Nibill">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://nibill.netlify.app">
+  <link rel="canonical" href="https://nibill.app">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
 
   <!-- Open Graph (WhatsApp, Facebook, iMessage previews) -->
-  <meta property="og:title" content="Nibill — Split bills the smart way">
-  <meta property="og:description" content="The fastest way to split a restaurant bill with friends. Free, works in any browser, no app needed.">
-  <meta property="og:image" content="https://nibill.netlify.app/og-image.jpg">
+  <meta property="og:title" content="Nibill — Free Restaurant Bill Splitter &amp; Tip Calculator">
+  <meta property="og:description" content="Split a restaurant bill fairly in seconds. Add items, assign them to people, calculate tips, and share the summary. Free, no app needed.">
+  <meta property="og:image" content="https://nibill.app/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:url" content="https://nibill.netlify.app">
+  <meta property="og:url" content="https://nibill.app">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Nibill">
 
   <!-- Twitter card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Nibill — Split bills the smart way">
-  <meta name="twitter:description" content="The fastest way to split a restaurant bill with friends. Free, works in any browser.">
-  <meta name="twitter:image" content="https://nibill.netlify.app/og-image.jpg">
+  <meta name="twitter:title" content="Nibill — Free Restaurant Bill Splitter &amp; Tip Calculator">
+  <meta name="twitter:description" content="Split a restaurant bill fairly in seconds. Add items, assign them to people, calculate tips, and share the summary. Free, no app needed.">
+  <meta name="twitter:image" content="https://nibill.app/og-image.jpg">
+
+  <!-- SoftwareApplication schema — helps Google understand what Nibill is -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Nibill",
+    "url": "https://nibill.app",
+    "description": "Split a restaurant bill fairly in seconds. Add items, assign them to people, calculate tips, and share the summary. Free, no app or sign-up needed.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any — runs in any web browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "GBP"
+    },
+    "featureList": [
+      "Split restaurant bills by item",
+      "Assign items to individual people",
+      "Calculate and split service charges and tips",
+      "Handle unequal splits with custom amounts",
+      "Save summary as shareable image",
+      "Supports multiple currencies"
+    ]
+  }
+  </script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJBEBVEFXL"></script>
@@ -464,8 +490,7 @@
 </div>
 
 <!-- ══ CONTACT FOOTER ══ -->
-<div style="text-align:center;padding:24px 0 8px;font-family:'DM Sans',sans-serif;display:flex;justify-content:center;gap:20px">
-  <a href="blog.html" style="font-family:'DM Sans',sans-serif;font-size:0.78rem;color:var(--ink-light);text-decoration:underline;text-underline-offset:3px;opacity:0.6">Tips &amp; advice</a>
+<div style="text-align:center;padding:24px 0 8px;font-family:'DM Sans',sans-serif">
   <button onclick="document.getElementById('contact-modal').classList.add('open')" style="background:transparent;border:none;font-family:inherit;font-size:0.78rem;color:var(--ink-light);cursor:pointer;text-decoration:underline;text-underline-offset:3px;opacity:0.6">Contact us</button>
 </div>
 
